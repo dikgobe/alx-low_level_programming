@@ -1,4 +1,4 @@
-#include<stdi.h>
+#include<stdio.h>
 /**
  * main -- Aprogram that peint aline using printf function
  * Return: 0 (succses)
