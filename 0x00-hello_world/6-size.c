@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main -- a program that print the size of the variable using sizeof() function
- * Return: 0 (success)
+ * main -- a program that print the size of various computer types
+ * Return 0 (Success)
  */
 int main(void)
 {
