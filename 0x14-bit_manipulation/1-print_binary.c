@@ -12,17 +12,17 @@ void print_binary(unsigned long int n)
 
 	for (index = 63; index >= 0; index--)
 	{
-		recent = n >> i;
+		recent = n >> index;
 
 		if (recent & 1)
 		{
 			track++;
-			_putchar('1');
+			printf('1');
 		}
 		else if (track)
-			_putchar('0');
+			printf('0');
 	}
 	if (!track)
-		_putchar('0');
+		printf('0');
 }
 
