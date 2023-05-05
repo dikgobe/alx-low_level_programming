@@ -17,12 +17,11 @@ void print_binary(unsigned long int n)
 		if (recent & 1)
 		{
 			track++;
-			printf('1');
+			_putchar('1');
 		}
 		else if (track)
-			printf('0');
+			_putchar('0');
 	}
 	if (!track)
-		printf('0');
+		_putchar('0');
 }
-
