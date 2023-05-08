@@ -11,7 +11,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int filedirectory;
-	int write;
+	int w;
 	int length = 0;
 
 	if (filename == NULL)
@@ -24,9 +24,9 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	filedirectory = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	write = write(filedirectory, text_content, length);
+	w = write(filedirectory, text_content, length);
 
-	if (filedirectory == -1 || write == -1)
+	if (filedirectory == -1 || w == -1)
 		return (-1);
 
 	close(filedirectory);
