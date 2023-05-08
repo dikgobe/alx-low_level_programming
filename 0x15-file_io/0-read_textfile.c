@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	teaspoon = malloc(sizeof(char) * letters);
 	knife = read(scissors, teaspoon, letters);
-	fock = write(STDOUT_FILENO, buf, t);
+	fock = write(STDOUT_FILENO, scissors, knife);
 
 	free(teaspoon);
 	close(scissors);
